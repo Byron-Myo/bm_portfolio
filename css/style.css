@@ -1,0 +1,295 @@
+/* display background color on navbar scroll */
+.navbarScroll.navbarDarkBlue {
+    background-color: #062761;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('../images/homeBackground.jpg');
+    /* background-color: white; */
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 7vw;
+}
+.hero_desc {
+    font-size: 3.5vw;
+}
+.hero_secdesc{
+    font-size: 2vw;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 6px black;
+}
+/* background color */
+.backBackground {
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(173, 219, 234));
+    /* background: url('../images/UI.png'); */
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('../images/UI.png'); */
+  }
+
+/* nav title */
+.nav-title{
+    color: white;
+    text-shadow: 3px 3px 4px #062761;
+}
+.navbar-items{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+    border: 5px solid #062761;
+}
+.downloadApp{
+    color: white;
+    background-color: #062761;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.downloadApp:hover{
+    color: #062761;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 2px solid #062761;
+}
+/* skills section css */
+.skillsText.card {
+    height: 280px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px #062761;
+  }
+.skillsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: 3px solid #062761;
+    border-radius: 23px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 17px;
+    border-radius: 17px;
+    background-color: #062761;
+}
+#html-bar{
+    animation: html-fill 3s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 3s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 80%;
+    }
+}
+#js-bar{
+    animation: js-fill 3s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 70%;
+    }
+}
+#bs-bar{
+    animation: bs-fill 3s forwards;
+}
+@keyframes bs-fill{
+    100%{
+        width: 80%;
+    }
+}
+#react-bar{
+    animation: react-fill 3s forwards;
+}
+@keyframes react-fill{
+    100%{
+        width: 50%;
+    }
+}
+#ps-bar{
+    animation: ps-fill 3s forwards;
+}
+@keyframes ps-fill{
+    100%{
+        width: 80%;
+    }
+}
+.card-title {
+    text-align: center;
+}
+.card-workTitle{
+    text-align: left;
+}
+.card-text {
+    text-align: center;
+}
+.card-bodyText{
+    text-align: left;
+    margin-left: 20px;
+}
+.card:hover .skillsIcon {
+    color: #062761;
+}
+.skillsText:hover {
+    border: 3px solid #062761;
+}
+/* contact form*/ 
+.contact{
+    background-color: transparent;
+    border: 2px solid #062761;
+    box-shadow: 3px 3px 4px #000000;
+    padding: 5px;
+}
+.form {
+    width: 100%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+  }
+  
+  .form input{
+    width: 100%;
+    height: 100%;
+    color: #062761;
+    padding-top: 20px;
+    border: none;
+    background-color: transparent;
+  }
+  .form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #062761;
+  }
+  .form label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #062761;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  .form input:focus {
+    outline: none;
+  }
+  .form input:focus + .label-name .content-name,
+  .form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    left: 0px;
+    color: #062761;
+  }
+  .form input:focus + .label-name::after,
+  .form input:valid + .label-name::after {
+    transform: translateX(0%);
+  }
+  .submitButton{
+    background-color: #062761;
+    color:#ffffff;
+    border-radius: 5px;
+  }
+ .submitButton:hover{
+    background-color: #ffffff;
+    color: #062761;
+    border-radius: 5px;
+ }
+/* LARGE SCREENS */
+@media(min-width:700px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+ 
+    .section > * {
+        padding: 2em;
+    }
+ 
+    .compnay-info h3, .maint {
+        text-align: left;
+    }
+}
+.mailTo{
+    color:#062761;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mailTo:hover{
+    color: #062761;
+    font-weight: none;
+    text-decoration: underline;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: black;
+}
+.fab {
+    margin-left: 10px;
+    color: white;
+}
+/* footer styling */
+#footer {
+    background-color: #062761;
+    text-align: center;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
