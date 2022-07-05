@@ -14,12 +14,15 @@
 /* text css above hero image*/
 .hero_title {
     font-size: 7vw;
+    color: #062761;
 }
 .hero_desc {
     font-size: 3.5vw;
+    color: yellow;
 }
 .hero_secdesc{
     font-size: 2vw;
+    color: red;
 }
 .hero-text {
     text-align: left;
