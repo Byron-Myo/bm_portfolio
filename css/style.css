@@ -14,6 +14,7 @@
 /* text css above hero image*/
 .hero_title {
     font-size: 7vw;
+    color: white;
 }
 .hero_desc {
     font-size: 3.5vw;
@@ -21,6 +22,7 @@
 }
 .hero_secdesc{
     font-size: 2vw;
+    color: white;
 }
 .hero-text {
     text-align: left;
