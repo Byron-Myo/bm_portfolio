@@ -2,40 +2,61 @@
 .navbarScroll.navbarDarkBlue {
     background-color: #062761;
 }
-
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('../images/homeBackground.jpg');
-    background-size:cover;
-    position:relative;
+/* display background video */
+.video-container video{
+    height: 100vh;
+    background-size: cover;
+    position: relative;
 }
-/* text css above hero image*/
-.hero_title {
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    .video-container {
+        background: url('../images/homeBackground.jpg');
+        height: 100vh;
+        background-size: cover;
+    }
+}
+/* text css above background video*/
+.my_title {
     font-size: 7vw;
     color: white;
+    -webkit-text-stroke: 0.1vw black;
 }
-.hero_desc {
+.my_desc {
     font-size: 3.5vw;
     color: yellow;
+    -webkit-text-stroke: 0.05vw black;
 }
-.hero_secdesc{
+.my_secdesc{
     font-size: 2vw;
     color: white;
+    -webkit-text-stroke: 0.03vw black;
 }
-.hero-text {
+.my-text {
     text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 1px 1px 6px black;
+    text-shadow: 1px 1px 6px #062761;
 }
 /* background color */
 .backBackground {
     background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(173, 219, 234));
-    /* background: url('../images/UI.png'); */
-    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('../images/UI.png'); */
   }
 
 /* nav title */
@@ -46,6 +67,18 @@
 .navbar-items{
     color: white;
     text-shadow: 1px 1px 4px black;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+.navbar-items:hover{
+    color: #062761;
+    text-shadow: none;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #062761;
+    margin-left: 10px;
 }
 /* about section image css */
 .imageAboutPage {
