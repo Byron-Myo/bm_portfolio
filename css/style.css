@@ -2,33 +2,14 @@
 .navbarScroll.navbarDarkBlue {
     background-color: #062761;
 }
-/* display background video */
-.video-container video{
+/* canvas0 */
+#canvas1{
+    position:relative;
+    background: black;
     height: 100vh;
     background-size: cover;
-    position: relative;
-}
-@media (min-aspect-ratio: 16/9) {
-    #videoBG {
-        width:100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio: 16/9) {
-    #videoBG { 
-        width:auto;
-        height: 100%;
-    }
-}
-@media (max-width: 767px) {
-    #videoBG {
-        display: none;
-    }
-    .video-container {
-        background: url('../images/homeBackground.jpg');
-        height: 100vh;
-        background-size: cover;
-    }
+    top: 0;
+    left: 0;
 }
 /* text css above background video*/
 .my_title {
